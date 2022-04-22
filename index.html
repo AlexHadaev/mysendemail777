@@ -1,0 +1,239 @@
+<html>
+	<head>
+		<title>My Send Email 777</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	</head>
+	<body>
+        <div class="logo">
+            <a href=""><img src="logo.png" alt=""></a>
+        </div>
+		<div class="list">
+			<a href="">Синергия</a> |
+			<a href="">Промоушен</a> | 
+			<a href="">Образование</a>
+		</div>	
+		
+		<h1>хотите творить будущее - <strong>присоединяйтесь!</strong></h1>
+		<form action="email_root.php" method="post">
+            <div class="wrap">
+				<div class="form-group-info">
+					<span>default:</span> alex.hadaev@n3wnormal.com, hadaev.alex@outlook.com
+				</div>
+                <div class="form-group-email">
+                    <span>@</span><input name="email" type="text" placeholder="Отправь электронную почту и будь первым!">
+					<textarea name="message"  cols="30" rows="10"></textarea>
+				</div>
+                <button type="submit">send</button>
+                <button type="reset">reset</button>
+            </div>
+
+		</form>	<br>
+	</body>
+	<style type="text/css">
+		textarea{
+			width: 100%;
+			background-color: black;
+			color: green;
+		}
+        @font-face {
+            font-family: lightf; /* Имя шрифта */
+            src: url(Lato-Light.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: regularf; /* Имя шрифта */
+            src: url(Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: mediumf; /* Имя шрифта */
+            src: url(Lato-Medium.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: boldf; /* Имя шрифта */
+            src: url(Lato-Bold.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: blackf; /* Имя шрифта */
+            src: url(Lato-Black.ttf); /* Путь к файлу со шрифтом */
+        }
+        a,button{
+            -webkit-transition: all .3s  ease;
+            -moz-transition: all .3s  ease;
+            -ms-transition: all .3s  ease;
+            -o-transition: all .3s  ease;
+            transition: all .3s  ease;
+        }
+        a:hover,button:hover{
+            -webkit-transition: all .3s  ease;
+            -moz-transition: all .3s  ease;
+            -ms-transition: all .3s  ease;
+            -o-transition: all .3s  ease;
+            transition: all .3s  ease;
+        }
+
+        body{
+            text-align: center;
+            color: #fff;
+            background: url("bg.jpg") center top no-repeat;
+            background-size: cover;
+            font-size: 14px;
+            font-family: lightf, sans-serif;
+        }
+        input:focus, button:focus{
+            outline: none;
+        }
+        .logo {
+            margin-top: 55px;
+        }
+        .wrap{
+            margin: 0 auto;
+            margin-top: 46px;
+            max-width: 635px;
+			width: 100%;
+			height: 100%;
+        }
+        form:after{
+            content:"";
+            clear: both;
+            display: block;
+        }
+        .form-group-email, .form-group-info{
+            background: rgba(255,255,255, .2);
+            line-height: 1.2;
+            max-width: 700px;
+            width: 100%;
+            float: left;
+            text-align: left;
+            border-radius: 5px;
+            border: 2px solid rgba(255,255,255, .2);
+            overflow: hidden;
+        }
+		.form-group-info{
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+		}
+		.form-group-info span{
+			color: greenyellow;
+		}
+		.js-add{
+			cursor: copy;
+		}
+        button{
+            float: left;
+            color: #fff;
+            background-color: #00b2f0;
+            line-height: 44px;
+            padding: 0 10px;
+            margin-top: 18px;
+            border: none;
+            font-family: boldf, sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            max-width: 142px;
+            width: 100%;
+			cursor: pointer;
+        }
+		button[type="reset"]{
+			float: right;
+		}
+        button:valid:hover{
+            background: #4478a1;
+        }
+        button:disabled:hover{
+            background: #00b2f0;
+        }
+        .form-group-email input{
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 0 10px 7px 25px;
+            font-size: 14px;
+			width: 100%;
+			max-width: calc(100% - 40px);
+			vertical-align: middle;
+			line-height: 30px;
+        }
+        .form-group-email span{
+            padding: 0 10px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+         span a{
+            color: #00b2f0;
+        }
+        .span{
+            font-size: 17px;
+            opacity: .7;
+        }
+        .list{
+            margin-top: 60px;
+            color: #fff;
+        }
+        .list a{
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 17px;
+            padding: 0 17px;
+            font-weight: 100;
+            font-family: regularf, sans-serif;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 35px;
+            font-weight: 100;
+            margin-top: 13px;
+            margin-bottom: 33px;
+            font-family: mediumf, sans-serif;
+        }
+        h1 strong{
+            font-family: backf, sans-serif;
+        }
+        .load{
+            background: url("load.png")  no-repeat;
+            padding: 2px 12px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .load:hover{
+            background: url("load_h.png");
+        }
+        ::-webkit-input-placeholder {color:rgba(255,255,255, .7);
+            font-style: italic;
+        }
+        ::-moz-placeholder          {color:rgba(255,255,255, .7);
+            font-style: italic;
+        }/* Firefox 19+ */
+        :-moz-placeholder           {color:rgba(255,255,255, .7);
+            font-style: italic;
+        }/* Firefox 18- */
+        :-ms-input-placeholder      {color:rgba(255,255,255, .7);
+            font-style: italic;
+        }
+        @media (max-width:620px) {
+            button{
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+	</style>
+    <script>
+		$(document).ready(function(){
+			$("form").submit(function(e) {
+				e.preventDefault();
+				var $form = $(this);
+				$.ajax({
+					type: "POST",
+					url: "email_root.php",
+					data: $form.serialize()
+				}).done(function() {
+					$form.find('input').val('');
+					alert('Thanks for your email');
+				});
+			});
+
+        })
+    </script>
+</html>
